@@ -1,0 +1,19 @@
+1. SCRIPT FOR PUBLICATION DATE
+
+ let nodes = document.querySelectorAll(" .field-content > span > font")
+    nodes[1].innerText
+
+2. SCRIPT FOR  BIDDING DATE 
+
+ let nodes = document.querySelectorAll(" .field-content > span > font")
+ nodes[4].innerText
+
+3. SCRIPT FOR OBJECT
+
+ let nodes = document.querySelectorAll(" .field-content > p > font > font")
+    nodes[0].innerText
+
+4. SCRIPT FOR ALL LINKS
+
+ let nodes = document.querySelectorAll(" .field--name-field-icone-link > div > div > a")
+    [...nodes].map(n => n.getAttribute('href'))
